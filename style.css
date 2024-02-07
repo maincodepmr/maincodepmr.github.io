@@ -145,6 +145,14 @@ header {
 .photo_item4{
   background-image: url(develop.jpg);
 }
+
+.photo_item5{
+  background-image: url(pytjunior.jpg);
+}
+
+.photo_item6{
+  background-image: url(apps.jpg);
+}
 .course_item{
   list-style: none;
 }
