@@ -383,7 +383,7 @@ footer{
 
 
 
-  @media (max-width:500px) {
+/*   @media (max-width:500px) {
 
     .allteachers{
       display: flex;
@@ -404,7 +404,7 @@ footer{
 
       
 
-  } 
+  }  */
 
   @media (hover) {
     .card-content {        
