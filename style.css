@@ -76,7 +76,15 @@ header {
     animation: pulse 1s infinite;
     
   }
-
+  .banner--load{
+    background-image: none;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: appearbanner 2s 1;
+  }
 
   .banner {
     background-image: url("banner.png");
@@ -171,7 +179,7 @@ header {
   }
 
   .course_item {
-    width: 28%;
+    width: 28%; 
     
     box-shadow: 0 0 10px var(--four);
     padding: 30px;
@@ -184,7 +192,7 @@ header {
    
     
     width: auto;
-    height: 200px;
+    height: 20%;
     background-size: cover;
     margin: auto;
     display: flex;
@@ -335,41 +343,7 @@ header {
     background: var(--one);
     color: var(--five);
 }
-@media (hover) {
-    .card-content {        
-    transform: translateY(77.5%);
-    transition: transform .5s ease-in-out;
-    }
-    .card:hover > .card-content, 
-    .card:focus-within > .card-content {
-        transform: translateY(0);
-        transition-delay: .5s;
-    }
-    .card:focus-within > .card-content {
-        transition-duration: 0ms;
-    }
-    .card-content > *:not(h1) {
-        opacity: 0;
-        transition: opacity .5s linear;
-    }
-    .card:hover > .card-content > *:not(h1), 
-    .card:focus-within > .card-content > *:not(h1) {
-        opacity: 1;
-        transition-delay: 1s;
-    }
-    .card-content > h1::before {
-        transform: scaleX(0);
-    }
-}
-@media (prefers-reduced-motion: reduce) {
-    *::before, *, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 0.01ms !important;
-        transition-duration: 00.01ms !important;
-        scroll-behavior: auto !important;
-        transition-delay: 0ms !important;
-    }
-}
+
 
 
 
@@ -408,3 +382,78 @@ footer{
   }
 
 
+
+  @media (max-width:500px) {
+
+    .allteachers{
+      display: flex;
+      flex-direction: column;
+    }
+    .teacher{
+      width: 100%;
+    }
+    .courses_items{
+      
+      flex-direction: column;
+      font-size: 10px;
+    }
+    .course_item {
+      width: 78%;
+    }
+
+
+      
+
+  } 
+
+  @media (hover) {
+    .card-content {        
+    transform: translateY(77.5%);
+    transition: transform .5s ease-in-out;
+    }
+    .card:hover > .card-content, 
+    .card:focus-within > .card-content {
+        transform: translateY(0);
+        transition-delay: .5s;
+    }
+    .card:focus-within > .card-content {
+        transition-duration: 0ms;
+    }
+    .card-content > *:not(h1) {
+        opacity: 0;
+        transition: opacity .5s linear;
+    }
+    .card:hover > .card-content > *:not(h1), 
+    .card:focus-within > .card-content > *:not(h1) {
+        opacity: 1;
+        transition-delay: 1s;
+    }
+    .card-content > h1::before {
+        transform: scaleX(0);
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    *::before, *, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 0.01ms !important;
+        transition-duration: 00.01ms !important;
+        scroll-behavior: auto !important;
+        transition-delay: 0ms !important;
+    }
+}
+
+
+
+/* анимации */
+
+@keyframes appearbanner {
+  0%{opacity: 0;
+
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
