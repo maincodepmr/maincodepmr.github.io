@@ -416,7 +416,7 @@ footer{
 
   .nav-list{
     flex-direction: column;
-   
+    font-size:36px;
   } 
 
   .course_item{
