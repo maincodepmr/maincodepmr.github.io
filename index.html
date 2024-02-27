@@ -8,7 +8,14 @@
   <meta name="copyright" content="maincode" />
   <title>Онлайн-школа программирования</title>
   <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style22.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
   <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -30,10 +37,10 @@
   <header>
     <nav>
       <div class="logo"></div>
-      <ul>
-        <li><a href="#courses">Курсы</a></li>
-        <li><a href="#teachers">Преподаватели</a></li>
-        <li><a href="#contacts">Напиши нам</a></li>
+      <ul class="nav-list">
+        <li><a class="navA" href="#courses">Курсы</a></li>
+        <li><a class="navA"  href="#teachers">Преподаватели</a></li>
+        <li><a  class="navA" href="#contacts">Напиши нам</a></li>
       </ul>
     </nav>
     <div class="banner">
@@ -53,8 +60,7 @@
             </p>
             <div class="item-scribe">
               <p class="age">8-12 лет</p>
-<!--             <p class="time">60 мин</p>
-            <p class="price">100 руб</p> -->
+
           </div>
         </li>
         
@@ -71,10 +77,21 @@
               применение программирования в scratch на реальных кейсах. </p>
             <div class="item-scribe">
               <p class="age">9-12 лет</p>
-<!--               <p class="time">60 мин</p>
-            <p class="price">100 руб</p>
-          </div> -->
+
         </li>
+
+        <li class="course_item">
+          <div class="photo_item photo_item5"></div>
+                <h3>Python Junior</h3>
+                <p class="courses-text">Блочный Python служит буферным направлением между блочным программированием на Scratch и текстовым языком программирования Python. . Цели занятий Блочным Python:- формирование системы базовых понятий, знаний, 
+                - умений и навыков в области изучения языка программирования Python;
+                - с использованием платформы EduBlocks. </p>
+          <div class="item-scribe">
+            <p class="age">10-13 лет</p>
+
+        </div>
+      </li>
+
         <li class="course_item">
           <div class="photo_item photo_item1"></div>
           <h3>Поколение Python</h3>
@@ -82,25 +99,13 @@
                 а также создаст свои проекты.</p>
             <div class="item-scribe">
               <p class="age">12-14 лет</p>
-<!--               <p class="time">60 мин</p>
-            <p class="price">100 руб</p> -->
+
           </div>
         </li>
 
 
         
-          <li class="course_item">
-            <div class="photo_item photo_item5"></div>
-                  <h3>Python Junior</h3>
-                  <p class="courses-text">Блочный Python служит буферным направлением между блочным программированием на Scratch и текстовым языком программирования Python. . Цели занятий Блочным Python:- формирование системы базовых понятий, знаний, 
-                  - умений и навыков в области изучения языка программирования Python;
-                  - с использованием платформы EduBlocks. </p>
-            <div class="item-scribe">
-              <p class="age">10-13 лет</p>
-<!--               <p class="time">60 мин</p>
-            <p class="price">100 руб</p> -->
-          </div>
-        </li>
+          
         
         <li class="course_item">
           <div class="photo_item photo_item2"></div>
@@ -108,8 +113,7 @@
             <p class="courses-text">Творческий курс в мире информационных технологий. На курсе изучаем UI / UX дизайн, популярные приложения для графики и веб-дизайна. В результате научимся создавать иллюстрации, элементы интерфейсов и веб-макетов, а ваше стартовое портфолио пополнится индивидуальными работами. Освоим профессиональные приложения.</p>
             <div class="item-scribe">
                 <p class="age">14-17 лет</p>
-  <!--             <p class="time">60 мин</p>
-              <p class="price">100 руб</p> -->
+  
           </div>
         </li>
 
@@ -119,8 +123,6 @@
             <p class="courses-text">Самое популярное направление в IT – создание веб-страниц.  Вы научитесь создавать различные виды сайтов с нуля, а также с помощью шаблонов: лендинги, информационные, коммерческие с использованием современных методов верстки. Изучение языка разметки HTML и таблицы стилей CSS, UI/UX дизайна, адаптивности и отзывчивости сайтов, а также языка программирования JavaScript. </p>
               <div class="item-scribe">
                 <p class="age">14-17 лет</p>
-<!--                 <p class="time">60 мин</p>
-                <p class="price">100 руб</p> -->
               </div>
         </li>
       </ul>
@@ -130,45 +132,67 @@
       
       <h2>Преподаватели</h2>
       <div class="allteachers">
-      
-      <div class="teacher">
-        <img src="nina.png" class="photo-teacher">
-        <h3>Нина Сергеевна</h3>
-        
-          <ul class="list-bio">
-            <li class="list-bio-item">2 высших образования </li>
-            <li class="list-bio-item">12 лет педагогического опыта </li>
-            <li class="list-bio-item">ежеквартально курсы повышения квалификации </li>
-            <li class="list-bio-item">3 года в международной онлайн-школе</li>
-            <li class="list-bio-item">9 лет в ПГУ им.Т.Г.Шевченко</li>
-            <li class="list-bio-item">Преподает: Приложения на Scratch, Roblox, Web design, Web development</li>
-          </ul>
-<!--           <p class="teacher-bio">
-          2 высших образования. 12 лет педагогического опыта. Преподает компьютерную грамотность и веб программирование. </p> -->
-        </div>
-      
-        <div class="teacher">
-          <img src="nata1.png" class="photo-teacher">
-          <h3>Наталья Николаевна</h3>
-            <ul class="list-bio">
-              <li class="list-bio-item">2 высших образования </li>
-              <li class="list-bio-item">5 лет педагогического опыта </li>
-              <li class="list-bio-item">5 лет в ПГУ им.Т.Г.Шевченко</li>
 
-              <li class="list-bio-item">Преподает: Программирование на Scratch, Python Junior, Поколение Python</li>
-              <li class="list-bio-item">    </li>
-              <li class="list-bio-item">     </li>
-              <li class="list-bio-item">     </li>
-              <li class="list-bio-item">     </li>
-            </ul>
-  <!--         <p class="teacher-bio">2 высших образования. 5 лет педагогического опыта. Преподает поколение Python. </p> -->
+
+
+
+
+       
+          <div class="card photo-teacher2">
+            <div class="card-content">
+              <h1>Нина Сергеевна <span>ghbd</span>    </h1>
+              <p>Преподает: Приложения на Scratch, Roblox, Web design, Web development</p>
+              <a href="https://www.instagram.com/p/CtwLD2vt6rl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Узнать больше</a>
+            </div>
+          </div>
+      
+       
+
+        
+        <div class="card photo-teacher3">
+          <div class="card-content ">
+            <h1>Наталья Николаевна</h1>
+            <p>Преподает: Программирование на Scratch, Python Junior, Поколение Python</p>
+            <a href="https://www.instagram.com/p/CvCyfaiNdwJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Узнать больше</a>
+          </div>
         </div>
+       </div>
+    </section>
+    <section class="projects">
+      <h2>Программирование игр на Scratch</h2>
+      <div class="autoplay">
+        <div class="carousel-item">
+          <a href="https://scratch.mit.edu/projects/960404342"><img src="scratch-work-1.JPG" alt=""></a>
         </div>
-    
+        <div class="carousel-item">
+          <a href="https://scratch.mit.edu/projects/955698285"><img src="scratch-work-2.JPG" alt=""></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://scratch.mit.edu/projects/940793948"><img src="scratch-work-3.JPG" alt=""></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://scratch.mit.edu/projects/933621670"><img src="scratch-work-4.JPG" alt=""></a>
+        </div>
+         <div class="carousel-item">
+          <a href="https://scratch.mit.edu/projects/945310962"><img src="scratch-work-5.JPG" alt=""></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://scratch.mit.edu/projects/941359146"><img src="scratch-work-6.JPG" alt=""></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://scratch.mit.edu/projects/934403608"><img src="scratch-work-7.JPG" alt=""></a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://scratch.mit.edu/projects/876782951"><img src="scratch-work-8.JPG" alt=""></a>
+        </div>
+      </div>
+      <div class="carousel"></div>
+      <div class="carousel"></div>
+      <div class="carousel"></div>
+      <div class="carousel"></div>
+      <div class="carousel"></div>
     </section>
 
-
-   
     </main>
 
     <footer>
@@ -179,5 +203,10 @@
           <a href="https://wa.me/message/2KWRGTKLDRLJM1"><div class="socseti socseti3"></div></a>
       </div>
       </footer>
+
+
+  
+ 
+      <script src="script.js"></script>
       </body>
       </html>
