@@ -3,7 +3,7 @@ $('.autoplay').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    prevArrow: '<img  class="arrow" src="Backto.png">',
+    prevArrow: '<img class="arrow" src="BackTo.png">',
     nextArrow: '<img class="arrow" src="Nextpage.png">',
   });
     
