@@ -477,8 +477,8 @@ footer{
 
 .carousel-item-web{
     width: 300px !important;
-    object-fit:cover;
-/*   height: 300px; */
-  margin: 20px;
+    object-fit:cover !important;
+  height: 600px !important;
+  margin: 20px !important;
 }
 
