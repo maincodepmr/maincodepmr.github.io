@@ -1,4 +1,4 @@
-$('.autoplay').slick({
+$('.carusel').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
