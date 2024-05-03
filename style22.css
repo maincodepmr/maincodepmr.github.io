@@ -475,3 +475,10 @@ footer{
   justify-content: space-evenly !important;
 }
 
+.carousel-item-web{
+    width: 300px !important;
+    object-fit:contain;
+/*   height: 300px; */
+  margin: 20px;
+}
+
