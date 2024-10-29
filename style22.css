@@ -203,7 +203,7 @@ nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-/*   flex-wrap: wrap; */
+  flex-wrap: wrap;
   background-color: #fff;
   color: white;
   padding: 5%;
@@ -237,6 +237,7 @@ nav ul {
   background-blend-mode: darken;
   border-radius: 1rem;
   padding: 22rem 0 0;
+    width: 25%;
   overflow: hidden;
   transition: transform .5s ease, background-color .25s ease;
   position: relative;
