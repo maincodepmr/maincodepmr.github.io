@@ -157,6 +157,10 @@ nav ul {
 .photo_item6{
   background-image: url(apps.png);
 }
+
+.photo_item7{
+  background-image: url(roblox.png);
+}
 .course_item{
   list-style: none;
 }
@@ -199,7 +203,7 @@ nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+/*   flex-wrap: wrap; */
   background-color: #fff;
   color: white;
   padding: 5%;
@@ -212,6 +216,9 @@ nav ul {
   margin-bottom: 50px;
 }
 
+.photo-teacher1{
+    background-image: url(lusi1.jpeg);
+}
 .photo-teacher2{
     background-image: url(nina.png);
 }
